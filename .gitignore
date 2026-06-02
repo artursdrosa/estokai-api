@@ -1,0 +1,96 @@
+# ==========================================
+# Python Core & Byte-compiled files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==========================================
+# Virtual Environments (Dependencies)
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+ENV3/
+env3/
+pyvenv.cfg
+.python-version
+
+# Package managers lockfiles / configurations
+# Uncomment if you run into cross-platform lock issues (usually kept)
+#.pdm.toml
+#Pipfile.lock
+#poetry.lock
+
+# ==========================================
+# FastAPI & Environment Variables (Crucial)
+# ==========================================
+.env
+.env.[a-zA-Z]*
+!.env.example
+.secrets
+secrets.*
+
+# ==========================================
+# SQLAlchemy & Local Databases
+# ==========================================
+# Keeps local development SQLite databases out of git
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# Alembic Migrations
+# ==========================================
+# Do NOT ignore your versions/ folder, but do ignore compiled files
+alembic/__pycache__/
+alembic/versions/__pycache__/
+
+# ==========================================
+# Testing & Code Quality
+# ==========================================
+.pytest_cache/
+.htmlcov/
+htmlcov/
+.track/
+.coverage
+.coverage.*
+.coverage.xml
+coverage.xml
+nosetests.xml
+coverage.ec
+.mypy_cache/
+.ruff_cache/
+.black
+.yamlfmt
+
+# ==========================================
+# Editors and IDEs
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
