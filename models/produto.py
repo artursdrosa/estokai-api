@@ -9,5 +9,3 @@ class Produto(Base):
     nome = Column(String(255), nullable=False)
     descricao = Column(String(255), nullable=True)
     preco = Column(Float, nullable=False)
-
-Base.metadata.create_all(engine)

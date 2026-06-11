@@ -6,5 +6,3 @@ class Estoque(Base):
 
     id_produto = Column(Integer, ForeignKey('produtos.id'), primary_key=True)
     quantidade = Column(Integer, nullable=False, default=0)
-
-Base.metadata.create_all(engine)
