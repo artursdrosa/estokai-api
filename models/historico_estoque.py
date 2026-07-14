@@ -1,5 +1,5 @@
 from sqlalchemy import Boolean, Column, Integer, String, ForeignKey
-from db import Base, engine
+from db import Base
 
 
 class HistoricoEstoque(Base):
@@ -10,5 +10,3 @@ class HistoricoEstoque(Base):
     venda = Column(Boolean, nullable=False)
     quantidade = Column(Integer, nullable=False)
     data = Column(String(255), nullable=False)
-
-Base.metadata.create_all(engine)

@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, ForeignKey
-from db import Base, engine
+from db import Base
 
 class Estoque(Base):
     __tablename__ = 'estoque'
