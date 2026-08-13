@@ -1,5 +1,5 @@
 from typing import Optional
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
 class ProdutoBase(BaseModel):
@@ -21,5 +21,4 @@ class ProdutoUpdate(BaseModel):
 class ProdutoRead(ProdutoBase):
     id: int
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
