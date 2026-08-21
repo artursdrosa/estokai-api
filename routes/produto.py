@@ -13,7 +13,6 @@ router = APIRouter(
 
 @router.post("/", response_model=ProdutoRead, status_code=201)
 def criar_produto(produto_create: ProdutoCreate, db: Session = Depends(get_db)):
-    """Cria o produto e insere seu registro no estoque físico, com quantidade zero."""
     produto = Produto(**produto_create.model_dump())
     db.add(produto)
     db.commit()
